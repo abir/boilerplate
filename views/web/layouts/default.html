@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ --> 
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+
+<head>
+	{pyro:theme:partial name="metadata"}
+</head>
+
+<body>
+
+	<!-- Begin page-wrapper -->
+	<div id="page-wrapper">
+		
+		<!-- Begin header -->
+		<div id="header">
+		{pyro:theme:partial name="header"}
+		</div>
+		<!-- End header -->
+
+		<!-- Begin nav -->
+		<ul id="header-nav">
+		{pyro:navigation:links group="header"}
+		<hr>
+		</ul>
+		<!-- End nav -->
+
+		<!-- Begin content-wrapper -->
+		<div id="content-wrapper">
+
+		<!-- Begin content -->
+			<div id="content">
+
+				{pyro:theme:partial name="breadcrumbs"}
+
+				{pyro:session:messages success="success-box" notice="notice-box" error="error-box"}
+
+				<div class="post">
+					{pyro:template:body}
+					<br style="clear:both;" />
+				</div>
+
+			</div>
+			<!-- End content -->
+
+			{pyro:theme:partial name="sidebar"}
+
+		</div>
+	<!-- End content-wrapper -->
+
+	{pyro:theme:partial name="footer"}</div>
+	<!-- End page-wrapper -->
+
+</body>
+
+</html>

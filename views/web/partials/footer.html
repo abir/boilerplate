@@ -1,0 +1,26 @@
+<!-- Begin footer -->
+<div id="footer-wrapper">
+	<div id="footer">
+
+	<div id="poweredby"><a href="http://pyrocms.com/">{pyro:theme:image file="logo.png" alt="Powered by PyroCMS"} Powered by PyroCMS</div>
+
+	<ul id="footer-nav">
+		{pyro:navigation:links group="footer"}
+		<li><a class="last" href="#top" title="Back to Top">Top &uarr;</a></li>
+        <li>&copy;{pyro:helper:date format="Y"} {pyro:settings:site_name}. All Rights Reserved.</li>
+	</ul>
+
+	</div>
+</div>
+<!-- End footer -->
+
+<!-- Begin scripts -->
+
+{pyro:integration:analytics}
+
+<!-- Get minified javascript files-->
+{pyro:theme:js file="web.js.php"}
+
+<!--[if lt IE 7]>{pyro:theme:js file="lib/unitpngfix.min.js"}<![endif]-->
+
+<!-- End scripts -->
